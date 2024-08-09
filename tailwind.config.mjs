@@ -4,11 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				brand: "#212712",
-				secondary: "#00000080",
-				forest: "#212712",
+				primary: "#212712",
+				secondary: "C08F1D",
 				orchid: "#5D204A",
-				gold: "C08F1D"
+				accent: "#00000080",
 			},
 		},
 	},

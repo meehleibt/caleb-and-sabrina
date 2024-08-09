@@ -1,16 +1,84 @@
-<nav class="flex flex-wrap items-center py-2 md:py-3 lg:py-5 px-4 md:px-28 lg:px-36 bg-forest">
+<nav
+  class="bg-primary"
+>
+  <div
+    class="flex flex-wrap items-center justify-between px-4 md:px-12 lg:px-32 py-4 md:py-2"
+  >
     <div>
         <a href="/" class="text-white text-lg md:text-xl lg:text-2xl "> 
             <span id="brand-name">Caleb + Sabrina</span>
         </a>
     </div>
-    
-    <div class="ml-auto self-center">
-        <a href="https://withjoy.com/sabrina-and-caleb-may-25/" target="_blank">
-            <button class="bg-orchid text-white text-base md:text-lg lg:text-xl py-2 px-6 rounded">RSVP</button>
-        </a>
-        <a href="/our-story" class="pl-2 md:pl-4 lg:pl-7 text-base md:text-lg lg:text-xl text-white">Our Story</a>
-        <a href="/wedding-info" class="pl-2 md:pl-4 lg:pl-7 text-base md:text-lg lg:text-xl text-white">Wedding Info</a>
-        <a href="/faq" class="pl-2 md:pl-4 lg:pl-7 text-base md:text-lg lg:text-xl text-white">FAQ</a>
+    <button
+      id="toggler"
+      class="space-y-2 rounded border px-4 py-2 print:hidden md:hidden"
+    >
+      <span class="block h-0.5 w-6 bg-white"></span>
+      <span class="block h-0.5 w-6 bg-white"></span>
+      <span class="block h-0.5 w-6 bg-white"></span>
+    </button>
+    <div
+      id="collapsible"
+      class="hidden flex-grow basis-full items-center md:flex md:basis-0 print:md:hidden"
+    >
+      <ul class="ml-auto flex flex-col md:items-center md:flex-row">
+        <li class="mx-3 py-2 list-none">
+            <a href="https://withjoy.com/sabrina-and-caleb-may-25/" target="_blank">
+                <button class="bg-orchid text-white text-base md:text-lg lg:text-xl py-2 px-6 rounded">RSVP</button>
+            </a>
+        </li>
+        <li class="mx-3 py-2 list-none">
+            <a href="/our-story" class="block md:pl-4 lg:pl-7 text-white text-base md:text-lg lg:text-xl">Our Story</a>
+        </li>
+        <li class="mx-3 py-2 list-none">
+            <a href="/wedding-info" class="block md:pl-4 lg:pl-7 text-white text-base md:text-lg lg:text-xl">Wedding Info</a>
+        </li>
+        <li class="mx-3 py-2 list-none">
+            <a href="/faq" class="block md:pl-4 lg:pl-7 text-white text-base md:text-lg lg:text-xl">FAQ</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
+
+<script>
+  const toggler = document.getElementById("toggler");
+  const collapsible = document.getElementById("collapsible");
+
+  toggler!.addEventListener("click", () => {
+    if (collapsible!.classList.contains("hidden")) {
+      show();
+    } else {
+      hide();
+    }
+  });
+
+  function show() {
+    collapsible!.classList.remove("hidden");
+    collapsible!.classList.add(
+      "h-0",
+      "overflow-hidden",
+      "transition-[height]",
+      "duration-300"
+    );
+    collapsible!.style.height = collapsible!.scrollHeight + "px";
+
+    collapsible!.addEventListener(
+      "transitionend",
+      () => {
+        collapsible!.classList.remove(
+          "h-0",
+          "overflow-hidden",
+          "transition-[height]",
+          "duration-300"
+        );
+        collapsible!.style.height = "";
+      },
+      { once: true }
+    );
+  }
+
+  function hide() {
+    collapsible!.classList.add("hidden");
+  }
+</script>
