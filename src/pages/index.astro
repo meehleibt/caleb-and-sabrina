@@ -1,8 +1,19 @@
 ---
-import Layout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = 'Caleb + Sabrina';
 ---
-<Layout title="Caleb + Sabrina">
-    <main>
-        <h1>Caleb & Sabrina</h1>
+<BaseLayout title={pageTitle}>
+    <main class="relative">
+        <div
+            id="hero"
+            class="flex min-h-[506px] flex-grow bg-cover bg-center md:min-h-[576px] lg:min-h-[840px]"
+            style="background-color: blueviolet;"
+        >
+            <div class="text-white">
+                <h1>Caleb & Sabrina</h1>
+            </div>
+        </div>
+        
     </main>
-</Layout>
+</BaseLayout>
