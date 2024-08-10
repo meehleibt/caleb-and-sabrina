@@ -9,10 +9,14 @@ Typography
   font-display: swap;
 }
 
-h1 {
+h1, h2 {
   font-family: "Dagtton", sans-serif;
 }
 
 .font-italiana {
   font-family: "Italiana", sans-serif;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
 }
