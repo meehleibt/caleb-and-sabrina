@@ -4,10 +4,11 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#212712",
-				secondary: "C08F1D",
+				forest: "#212612",
+				olive: "#716C33",
 				orchid: "#5D204A",
-				accent: "#00000080",
+				wine: "#2A1A1E",
+				gold: "#C08F1C",
 			},
 		},
 	},

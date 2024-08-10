@@ -2,17 +2,17 @@
 Typography 
 ===========*/
 @font-face {
-    font-family: 'Dagtton';
-    src: url('/fonts/Dagtton.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-h1 {
-    font-family: 'Dagtton', sans-serif;
+  font-family: "Dagtton";
+  src: url("/fonts/Dagtton.otf") format("woff2"), url("/fonts/Dagtton.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-nav {
-    font-family: "Italiana", cursive;
+h1 {
+  font-family: "Dagtton", sans-serif;
+}
+
+.font-italiana {
+  font-family: "Italiana", sans-serif;
 }

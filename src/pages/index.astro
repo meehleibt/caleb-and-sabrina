@@ -1,15 +1,32 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import GoldDown from '../svgs/Art-Deco-Element-DOWN.svg';
 
 const pageTitle = 'Caleb + Sabrina';
 ---
 <BaseLayout title={pageTitle}>
     <main class="relative">
-        <div>
-            <div class="text-white">
-                <h1>Caleb & Sabrina</h1>
+        <div 
+            id="hero"
+            class="flex min-h-[380px] flex-grow bg-cover bg-center shadow drop-shadow-lg md:min-h-[580px] lg:min-h-[680px]"
+            style="background-image: url('../images/Home-Page-Hero.jpg');"
+        >
+            <div class="grid grid-cols-3">
+                <div class="col-span-2 flex h-screen">
+                    <div class="px-4 md:px-12 lg:px-32 m-auto place-items-center">
+                        <h1 class="text-9xl text-white text-center my-4">Caleb & Sabrina</h1>
+                        <p class="font-italiana text-6xl uppercase text-white text-center mt-10">Are Tying the Knot</p>
+                        <Image 
+                            src={GoldDown} 
+                            alt="Gold Art Deco Element Downward"
+                            class="max-w-sm mx-auto"
+                        />
+                        <p class="font-italiana text-5xl text-white text-center">Saturday, May 10th, 2025</p>
+                        <p class="font-italiana text-5xl text-white text-center">Cleveland, OH</p>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </main>
 </BaseLayout>
