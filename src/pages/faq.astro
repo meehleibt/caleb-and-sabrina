@@ -1,8 +1,50 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+
 const pageTitle = 'FAQ | Caleb + Sabrina';
 ---
 <BaseLayout title={pageTitle}>
-
+    <div 
+        id="hero"
+        class="flex min-h-[380px] flex-grow bg-cover bg-center shadow drop-shadow-lg md:min-h-[500px] lg:max-h-[695px]"
+        style="background-image: url('../images/FAQ-Hero.jpg');"
+    >
+        <div class="grid grid-cols-3">
+            <div class="col-span-2 flex h-screen">
+                <div class="px-4 md:px-12 lg:px-32 m-auto place-items-center">
+                    <h1 class="text-9xl text-white text-center my-4">Just So</h1>
+                    <h1 class="text-9xl text-white ml-6 justify-self-end">You Know</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-28 mt-8">
+        <h3 class="font-italiana text-3xl mt-4">How do I RSVP?</h2>
+        <p class="font-montserrat mt-2">Please visit <a href="https://withjoy.com/sabrina-and-caleb-may-25/rsvp">https://withjoy.com/sabrina-and-caleb-may-25/rsvp</a> to submit your RSVP. Or click the RSVP button located at the top of the website. The venue and caterer require a final guest count by March 1, 2025.</p>
+        <h3 class="font-italiana text-3xl mt-4">Are children invited?</h2>
+        <p class="font-montserrat mt-2">We are delighted to have your children attend our big day! We ask parents with very small children or particularly excitable children to consider skipping the ceremony and join us afterward for the reception.</p>
+        <h3 class="font-italiana text-3xl mt-4">Will the wedding be indoors or outdoors?</h2>
+        <p class="font-montserrat mt-2">Because Cleveland weather is wildly unpredictable – even in May – the entire wedding (ceremony, cocktail hour, and reception) will be indoors at the Ballroom at Park Lane in University Circle.</p>
+        <h3 class="font-italiana text-3xl mt-4">What is the dress code?</h2>
+        <p class="font-montserrat mt-2">Guests should arrive in formal dress and ready to dance! We encourage dressing to the nines and as glamourous as you’d like! The only color we request female guests avoid is white.</p>
+        <h3 class="font-italiana text-3xl mt-4">Where can we stay overnight?</h2>
+        <p class="font-montserrat mt-2">Located directly west across the street from the Ballroom at Park Lane is a Residence Inn, where a room block will be reserved for our guests. Other nearby hotels include:</p>
+        <ul class="ml-12 pt-4">
+            <li class="list-disc font-montserrat text-forest text-lg font-medium"><a href="https://maps.app.goo.gl/TuuRZaWE63VVcPtr8">InterContinental Cleveland</a> – 0.6 miles</li>
+            <li class="list-disc font-montserrat text-forest text-lg font-medium"><a href="https://maps.app.goo.gl/yV5CL7FuDEWfqyL59">Courtyard Cleveland University Circle</a> – 0.8 miles</li>
+            <li class="list-disc font-montserrat text-forest text-lg font-medium"><a href="https://maps.app.goo.gl/B63KyDp3xYbY4CMG8">InterContinental Hotel Suites Cleveland</a> – 1.1 miles</li>
+        </ul>
+        <h3 class="font-italiana text-3xl mt-4">Where can we park?</h2>
+        <p class="font-montserrat mt-2">All guests, whether they are staying at the Residence Inn next door or otherwise, have permission from the hotel to use their parking lot. The parking lot is just across the street from the Ballroom at Park Lane.</p>
+        <h3 class="font-italiana text-3xl mt-4">When should we arrive?</h2>
+        <p class="font-montserrat mt-2">To allow yourself enough time to greet friends and family, find a seat, and get comfortable, we ask that guests arrive 30 minutes to an hour before the ceremony start time at 4pm. Per the venue, seating will not be permitted after 3:45pm.</p>
+        <h3 class="font-italiana text-3xl mt-4">Do you mind if I take photos during your ceremony?</h2>
+        <p class="font-montserrat mt-2">We truly ask all guests to leave their phones off and in pockets and purses during the ceremony. The ceremony will be short, and all photos will be made available for family and friends who are interested. We want to look back at our ceremony photos without phones and tablets in the background. Save your phone battery to take pics during the reception!</p>
+        <h3 class="font-italiana text-3xl mt-4">Will there be an open bar?</h2>
+        <p class="font-montserrat mt-2">Yes! We will be providing beer, wine, and spirits. However, the Ballroom at Park Lane has a strict no-shots policy and outside alcohol is completely forbidden.</p>
+        <h3 class="font-italiana text-3xl mt-4">Can dietary restrictions be accommodated for dinner/cocktail hour?</h2>
+        <p class="font-montserrat mt-2">Yes, our caterer can accommodate allergies and dietary restrictions. Please add any restrictions to your note when you RSVP at: <a href="https://withjoy.com/sabrina-and-caleb-may-25/rsvp">https://withjoy.com/sabrina-and-caleb-may-25/rsvp</a></p>
+                                                                                                                                                                                    
+    </div>
 </BaseLayout>
