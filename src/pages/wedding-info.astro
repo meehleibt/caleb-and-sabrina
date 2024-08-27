@@ -10,32 +10,32 @@ const pageTitle = 'Wedding Info | Caleb + Sabrina';
 <BaseLayout title={pageTitle}>
     <div 
         id="hero"
-        class="flex min-h-[380px] flex-grow bg-cover bg-center shadow drop-shadow-lg md:min-h-[500px] lg:min-h-[580px]"
+        class="flex flex-grow bg-cover bg-center"
         style="background-image: url('../images/Wedding-Info-Hero.jpg');"
     >
         <div class="grid grid-cols-3">
-            <div class="col-span-2 flex h-screen">
+            <div class="col-span-12 md:col-span-2 flex h-screen">
                 <div class="px-4 md:px-12 lg:px-32 m-auto place-items-center">
-                    <h1 class="text-9xl text-white text-center my-4">Wedding Information</h1>
+                    <h1 class="text-6xl md:text-8xl lg:text-9xl text-white text-shadow my-4">Wedding<br><span class="pl-12 md:pl-20 lg:pl-24">Information</span></h1>
                 </div>
             </div>
         </div>
     </div>
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 mt-14">
-            <div class="col-span-5">
+        <div class="grid grid-cols-12 mt-12 lg:mt-14">
+            <div class="col-span-12 md:col-span-5">
                 <Image 
                     src={Venue}
                     alt="Gold Art Deco Element Downward"
-                    class="w-4/5 mx-auto"
+                    class="w-4/5 mx-auto mb-12 lg:mb-14"
                 />   
             </div>
-            <div class="col-span-7">
-                <h2 class="text-7xl text-forest">The Ballroom at Park Lane</h2>
-                <div class="border-b-2 border-gold w-full my-4"></div>
+            <div class="col-span-12 md:col-span-7">
+                <h2 class="text-4xl md:text-5xl lg:text-7xl text-forest">The Ballroom at Park Lane</h2>
+                <div class="border-b-2 border-gold w-full my-2 lg:my-4"></div>
                 <a 
                     href="https://maps.app.goo.gl/KU5FKdWUGtWHwH6t6"
-                    class="font-montserrat text-forest font-medium text-2xl underline pb-4">
+                    class="font-montserrat text-forest font-medium text-lg md:text-xl lg:text-2xl underline pb-4">
                     10510 Park Ln, Cleveland, OH 44106
                 </a>
                 <p class="font-montserrat text-forest font-medium text-lg py-4">Originally built in 1923 as a luxury hotel and speakeasy for the influential and elite, The Ballroom at Park Lane has changed with the times to accentuate America’s most pivotal eras. As a concert venue in the ‘60s, it hosted folk legends Bob Dylan and Arlo Guthrie. Today, it serves as the backdrop for Cleveland’s most talked about weddings and events.</p>
@@ -47,9 +47,9 @@ const pageTitle = 'Wedding Info | Caleb + Sabrina';
         <Image 
             src={GoldUp} 
             alt="Gold Art Deco Element Upward"
-            class="w-1/3 mx-auto mb-4"
+            class="w-3/4 md:w-1/2 lg:w-1/3 mx-auto mb-4"
         />
-        <div class="w-1/2 mx-auto">
+        <div class="w-4/5 lg:w-1/2 mx-auto">
             <p class="font-montserrat text-forest text-center text-lg font-bold pb-4">Caleb and Sabrina’s wedding will be held at the Ballroom at Park Lane on Saturday, May 10th, 2025 at 4:00pm.</p>
             <p class="font-montserrat text-forest text-center text-lg font-bold pb-4">After the ceremony, guest will enjoy a cocktail hour with hors d’oerves and drinks.</p>
             <p class="font-montserrat text-forest text-center text-lg font-bold pb-4">Following the cocktail hour, we will celebrate with a reception complete with a buffet dinner and dancing until 10:00pm.</p>
@@ -57,13 +57,13 @@ const pageTitle = 'Wedding Info | Caleb + Sabrina';
         <Image 
             src={GoldDown} 
             alt="Gold Art Deco Element Downward"
-            class="w-1/3 mx-auto mt-4"
+            class="w-3/4 md:w-1/2 lg:w-1/3 mx-auto mt-4"
         />
     </div>
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 mt-14">
-            <div class="col-span-7">
-                <h2 class="text-7xl text-forest">Where to Stay</h2>
+            <div class="col-span-12 md:col-span-7">
+                <h2 class="text-5xl lg:text-7xl text-forest">Where to Stay</h2>
                 <div class="border-b-2 border-gold w-4/5 my-4"></div>
                 <p class="font-montserrat text-forest text-lg font-medium">Located directly west across the street from the Ballroom at Park Lane is a Residence Inn, where a room block will be reserved for our guests. Other nearby hotels include:</p>
                 <ul class="ml-12 pt-4">
@@ -72,7 +72,7 @@ const pageTitle = 'Wedding Info | Caleb + Sabrina';
                     <li class="list-disc font-montserrat text-forest text-lg font-medium"><a href="https://maps.app.goo.gl/B63KyDp3xYbY4CMG8">InterContinental Hotel Suites Cleveland</a> – 1.1 miles</li>
                 </ul>
             </div>
-            <div class="col-span-5">
+            <div class="col-span-12 md:col-span-5">
                 <!-- ###### WEATHER WIDGET ###### -->
             </div>
         </div>

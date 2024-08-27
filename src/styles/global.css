@@ -20,3 +20,7 @@ h1, h2 {
 .font-montserrat {
     font-family: "Montserrat", sans-serif;
 }
+
+.text-shadow {
+  text-shadow: #00000080 0px 5px 6px;
+}
