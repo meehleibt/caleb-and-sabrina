@@ -18,9 +18,9 @@ const wedding_date = DateTime.fromObject(
 
 function Section({ timer, title }: { timer: number; title: string }) {
   return (
-    <div className="px-4">
-      <div className="text-5xl sm:text-7xl font-italiana">{timer}</div>
-      <div className="text-xl font-montserrat font-medium text-orchid py-4">
+    <div className="px-2 lg:px-4">
+      <div className="text-5xl md:text-6xl lg:text-7xl font-italiana">{timer}</div>
+      <div className="text-sm md:text-base lg:text-xl font-montserrat font-medium text-orchid py-2 lg:py-4">
         {title}
       </div>
     </div>
