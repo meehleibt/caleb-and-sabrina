@@ -2,26 +2,30 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import Puppy from '../images/Puppy-Picture.png';
+import EightBall from '../images/Eight-Ball.png';
+import Cabin from '../images/Cabin.png';
 
 const pageTitle = 'Our Story | Caleb + Sabrina';
 ---
 <BaseLayout title={pageTitle}>
-    
-    <div class="relative">
-        <picture>
-            <source media="(max-width: 480px)" srcset="../images/Our-Story-Hero-Mobile.jpg" />
-            <source media="(max-width: 810px)" srcset="../images/Our-Story-Hero-Tablet.jpg" />
-            <source media="(min-width: 811px)" srcset="../images/Our-Story-Hero-Desktop.jpg" />
-            <img src="../images/Our-Story-Hero-Desktop.jpg" />
-        </picture>
-        <div class="absolute top-0 left-0 w-4/5">
-            <div class="grid grid-cols-2 min-h-[480px] md:min-h-[300px] lg:min-h-[700px] px-4 md:px-8 lg:px-32">
-                <div class="col-span-2 place-content-center -mt-20">
-                    <h1 class="font-dagtton text-white text-stroke-white text-9xl md:mb-12 lg:mb-24 text-shadow">Our Story</h1>
+    <div class="mt-14 lg:mt-0">
+       <div class="relative">
+            <picture>
+                <source media="(max-width: 480px)" srcset="../images/Our-Story-Hero-Mobile.jpg" />
+                <source media="(max-width: 810px)" srcset="../images/Our-Story-Hero-Tablet.jpg" />
+                <source media="(min-width: 811px)" srcset="../images/Our-Story-Hero-Desktop.jpg" />
+                <img src="../images/Our-Story-Hero-Desktop.jpg" />
+            </picture>
+            <div class="absolute top-0 left-0 w-4/5">
+                <div class="grid grid-cols-2 min-h-[480px] md:min-h-[300px] lg:min-h-[700px] px-4 md:px-8 lg:px-32">
+                    <div class="col-span-2 place-content-center -mt-20">
+                        <h1 class="font-dagtton text-white text-stroke-white text-4xl md:text-8xl lg:text-10xl md:mb-12 lg:mb-24 text-shadow">Our Story</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
+    
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 mt-12 lg:mt-14">
             <div class="col-span-12 md:col-span-5">
@@ -37,6 +41,20 @@ const pageTitle = 'Our Story | Caleb + Sabrina';
                 <p class="font-montserrat text-forest font-medium text-xl pb-4">Caleb and Sabrina met in Las Vegas in 2019 and enjoyed their first date together during brunch at an Italian restaurant. We immediately bonded over our love for our dogs, our world travel experiences, and our never-ending list of common pop culture interests, such as: Star Wars, Formula1, and dozens of TV shows and movies. We were planning our next date before the first one had even finished. Since our first date in 2019, our journey together has included swimming with wild whale sharks in Mexico, dogsledding on the Iditarod in Alaska, spur-of-the-moment weekend getaways to San Francisco and Huntington Beach, and less fun activities like navigating Covid early into our relationship and moving three times in four years.</p>
                 <p class="font-montserrat text-forest font-medium text-xl pb-4">In April of 2024, we traveled to Milwaukie, Oregon where we stayed in a secluded cabin on the Willamette River and spent the weekend kayaking. Notable moments of this trip include discovering a secret island to hike on, encountering a massive wild sea lion, and finding a magic eight ball in the cabin. Caleb asked Sabrina to make a wish on the eight ball, and on the last night of the trip her wish came true. Sitting on the cabin’s porch and watching the neon pink sunset reflect across the river, Caleb proposed with Sabrina’s dream ring and she said yes before he could even finish the question!</p>
                 <p class="font-montserrat text-forest font-medium text-xl pb-4">Today, we live in a suburb of Albuquerque, New Mexico and spend our days doing our favorite things. Sabrina loves to cook homemade Italian cuisine every night, Caleb is a dedicated powerlifter, and together we love to snuggle up with our Dutch Shepard (Ahsoka) and our Yorkie (Louie) and watch terrible movies until we cry laughing. Over the past 5 years, our relationship has evolved into a true partnership that neither of us could have ever dreamt of. We are best friends who share one life, two pieces that can never be separated. Our upcoming marriage is the next exciting step in solidifying our dream life together, and we hope you can join us to share in this moment for which we have waited so long.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-2 mt-16">
+            <div class="col-span-1">
+                <Image 
+                    src={EightBall}
+                    alt="magic 8 ball response"
+                />
+            </div>
+            <div class="col-span-1">
+                <Image 
+                    src={Cabin}
+                    alt="view of a river from a cabin"
+                />
             </div>
         </div>
     </div>

@@ -11,7 +11,8 @@ export default {
 				gold: "#C08F1C",
 			},
 			fontSize: {
-				'9xl': '190px'
+				'9xl': '160px',
+				'10xl': '190px'
 			}
 		},
 	},

@@ -26,7 +26,7 @@ To allow yourself enough time to greet friends and family, find a seat, and get 
 We truly ask all guests to leave their phones off and in pockets and purses during the ceremony. The ceremony will be short, and all photos will be made available for family and friends who are interested. We want to look back at our ceremony photos without phones and tablets in the background. Save your phone battery to take pics during the reception!
 
 ### Will there be an open bar?
-Yes! We will be providing beer, wine, and spirits. However, the Ballroom at Park Lane has a strict no-shots policy and outside alcohol is completely forbidden.
+Yes! However, the Ballroom at Park Lane has a strict no-shots policy and outside alcohol is completely forbidden.
 
 ### Can dietary restrictions be accommodated for dinner/cocktail hour?
 Yes, our caterer can accommodate allergies and dietary restrictions. Please add any restrictions to your note when you RSVP at: [https://withjoy.com/sabrina-and-caleb-may-25/rsvp](WithJoy.com/sabrina-and-caleb-may-25/rsvp).
