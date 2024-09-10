@@ -4,30 +4,8 @@ import { Image } from 'astro:assets';
 import Venue from '../images/Ballroom-at-parklane.png';
 import GoldDown from '../svgs/Art-Deco-Element-DOWN.svg';
 import GoldUp from '../svgs/Art-Deco-Element-UP.svg';
-import ReactWeather, { useOpenWeather } from 'react-open-weather';
 
 const pageTitle = 'Wedding Info | Caleb + Sabrina';
-
-// const App = () => {
-//   const { data, isLoading, errorMessage } = useOpenWeather({
-//     key: '1694fd409791ede6c14f47f4dac3ccc5',
-//     lat: '41.4993',
-//     lon: '81.6944',
-//     lang: 'en',
-//     unit: 'imperial', // values are (metric, standard, imperial)
-//   });
-//   return (
-//     <ReactWeather
-//       isLoading={isLoading}
-//       errorMessage={errorMessage}
-//       data={data}
-//       lang="en"
-//       locationLabel="Cleveland, OH"
-//       unitsLabels={{ temperature: 'F', windSpeed: 'M/h' }}
-//       showForecast
-//     />
-//   );
-// };
 ---
 <BaseLayout title={pageTitle}>
     <div class="relative">
