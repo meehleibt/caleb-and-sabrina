@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
+import { Image, Picture } from 'astro:assets';
 import GoldDown from '../svgs/Art-Deco-Element-DOWN.svg';
 import GoldUp from '../svgs/Art-Deco-Element-UP.svg';
 import WelcomeOval from '../images/Welcome-Section.png';
@@ -8,26 +8,30 @@ import PlaneIcon from '../svgs/Honeymoon-Icon.svg';
 import FundOval from '../images/Honeymoon-Fund-Section.png';
 import Countdown from '../components/Countdown';
 
+import HomeHero from '../images/Home-Page-Hero-Desktop.jpg';
+
 const pageTitle = 'Caleb + Sabrina';
 ---
 <BaseLayout title={pageTitle}>
     <main class="relative">
-        <div 
-            id="hero"
-            class="flex flex-grow bg-cover bg-center bg-no-repeat"
-            style="background-image: url('../images/Home-Page-Hero.jpg');"
-        >
-            <div class="grid grid-cols-3">
-                <div class="col-span-2 flex h-screen">
-                    <div class="px-4 md:px-8 lg:px-32 my-auto place-items-center">
-                        <h1 class="text-5xl md:text-6xl lg:text-9xl text-white text-center my-4">Caleb & Sabrina</h1>
-                        <p class="font-italiana text-2xl md:text-4xl lg:text-6xl uppercase text-white text-shadow text-center mt-2 md:mt-6 lg:mt-10">Are Tying the Knot</p>
+        <div class="relative">
+            <picture>
+                <source media="(max-width: 480px)" srcset="../images/Home-Page-Hero-Mobile.jpg" />
+                <source media="(max-width: 810px)" srcset="../images/Home-Page-Hero-Tablet.jpg" />
+                <source media="(min-width: 811px)" srcset="../images/Home-Page-Hero-Desktop.jpg" />
+                <img src="../images/Home-Page-Hero-Desktop.jpg" />
+            </picture>
+            <div class="absolute top-0 left-0">
+                <div class="grid grid-cols-2 place-content-center min-h-[480px] md:min-h-[500px] lg:min-h-[920px] px-4 md:px-8 lg:px-32">
+                    <div class="col-span-2">
+                        <h1 class="font-dagtton text-4xl md:text-6xl lg:text-9xl text-white text-center -mt-12">Caleb & Sabrina</h1>
+                        <p class="font-italiana text-xl md:text-3xl lg:text-7xl uppercase text-white text-shadow text-center mt-6 md:mt-6 lg:mt-36">Are Tying the Knot</p>
                         <Image 
                             src={GoldDown} 
                             alt="Gold Art Deco Element Downward"
-                            class="w-3/5 md:w-4/5 lg:max-w-sm mx-auto"
+                            class="w-3/4 lg:max-w-lg mx-auto mt-1 md:mt-2"
                         />
-                        <p class="font-italiana text-lg md:text-3xl lg:text-5xl text-white text-shadow text-center">Saturday, May 10th, 2025</p>
+                        <p class="font-italiana text-lg md:text-3xl lg:text-5xl text-white text-shadow text-center mt-4">Saturday, May 10th, 2025</p>
                         <p class="font-italiana text-lg md:text-3xl lg:text-5xl text-white text-shadow text-center mt-0 md:mt-1 lg:mt-2">Cleveland, OH</p>
                     </div>
                 </div>
@@ -42,26 +46,26 @@ const pageTitle = 'Caleb + Sabrina';
                         class="w-4/5 mx-auto"
                     />   
                 </div>
-                <div class="col-span-12 md:col-span-7">
-                    <h2 class="text-5xl lg:text-7xl text-forest">Welcome</h2>
+                <div class="col-span-12 md:col-span-7 pr-1 md:pr-16">
+                    <h2 class="font-dagtton text-5xl lg:text-7xl text-forest text-stroke mb-10">Welcome</h2>
                     <div class="border-b-2 border-gold w-6/12 my-2 lg:my-4"></div>
-                    <p class="font-montserrat text-forest text-lg pb-4">We are thrilled to share this exciting journey with you as we prepare to say “I do.” Here, you’ll find all the details about our big day, including digital RSVP and lodging information. We are incredibly grateful for the love and support of our family and friends, and we can’t wait to celebrate this huge moment of our lives with all of you. Thank you for being a part of our love story!</p>
-                    <p class="font-montserrat text-forest text-lg">Saturday, May 10th, 2025</p>
-                    <p class="font-montserrat text-forest text-lg pb-4">The Ballroom at Park Lane - 10510 Park Ln, Cleveland, OH 44106</p>
-                    <a href="#">
-                        <button class="font-italiana bg-orchid text-white text-base md:text-lg lg:text-xl py-2 px-24 rounded-md">RSVP</button>
+                    <p class="font-montserrat text-forest text-xl pb-4">We are thrilled to share this exciting journey with you as we prepare to say “I do.” Here, you’ll find all the details about our big day, including digital RSVP and lodging information. We are incredibly grateful for the love and support of our family and friends, and we can’t wait to celebrate this huge moment of our lives with all of you. Thank you for being a part of our love story!</p>
+                    <p class="font-montserrat text-forest text-xl">Saturday, May 10th, 2025</p>
+                    <p class="font-montserrat text-forest text-xl">The Ballroom at Park Lane - 10510 Park Ln, Cleveland, OH 44106</p>
+                    <a href="https://withjoy.com/sabrina-and-caleb-may-25/">
+                        <button class="font-italiana bg-orchid hover:bg-wine text-white text-stroke-white text-base md:text-lg lg:text-xl py-2 px-24 my-8 rounded-md shadow-lg">RSVP</button>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="my-10">
+        <div class="mt-20 mb-28">
             <Image 
                 src={GoldUp} 
                 alt="Gold Art Deco Element Upward"
                 class="w-3/5 md:w-1/2 lg:w-1/3 mx-auto mb-4"
             />
-            <p class="font-italiana text-forest text-center text-3xl lg:text-4xl">The Countdown Is On!</p>
-            <h2 class="text-forest text-6xl lg:text-7xl text-center">Celebration Coming In</h2>
+            <p class="font-italiana text-forest text-stroke text-center text-3xl lg:text-4xl">The Countdown Is On!</p>
+            <h2 class="font-dagtton text-forest text-stroke text-6xl lg:text-7xl text-center mb-12">Celebration Coming In</h2>
             <!-- ####### COUNTDOWN TIMER ####### -->
             <Countdown client:only />
             <Image 
@@ -73,18 +77,18 @@ const pageTitle = 'Caleb + Sabrina';
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-12 mt-14">
                 <div class="col-span-12 md:col-span-7">
-                    <h2 class="text-5xl lg:text-7xl text-forest">In Lieu of Gifts</h2>
+                    <h2 class="font-dagtton text-5xl lg:text-7xl text-forest text-stroke mb-10">In Lieu of Gifts</h2>
                     <div class="border-b-2 border-gold w-3/5 lg:w-6/12 my-4"></div>
-                    <h3 class="font-italiana text-forest text-2xl lg:text-3xl mb-2 lg:mb-4">Honeymoon Fund</h3>
-                    <p class="font-montserrat text-forest">Your presence at our wedding is the only gift that we expect. To share in our biggest moment is more than we could ever ask. If you would still like to give a gift, we are requesting contributions to our honeymoon instead of items from a registry. Because we have been cohabitating for several years, we have accumulated more household belongings than we know what to do with!</p>
+                    <h3 class="font-italiana text-forest text-stroke text-2xl lg:text-3xl mb-2 lg:mb-4">Honeymoon Fund</h3>
+                    <p class="font-montserrat text-forest text-xl">Your presence at our wedding is the only gift that we expect. To share in our biggest moment is more than we could ever ask. If you would still like to give a gift, we are requesting contributions to our honeymoon instead of items from a registry. Because we have been cohabitating for several years, we have accumulated more household belongings than we know what to do with!</p>
                     <div class="flex flex-wrap items-center my-6">
                         <Image 
                             src={PlaneIcon} 
                             alt="honeymoon heart airplane icon"
                             class="w-16 md:w-20 lg:w-28"
                         />
-                        <a href="#">
-                            <button class="font-italiana bg-orchid text-white text-base md:text-lg lg:text-xl py-2 px-6 ml-4 md:ml-6 lg:ml-8 rounded-md">Venmo: @Sabrina-Taylor-91</button>
+                        <a href="https://venmo.com/code?user_id=2597389290438656033&created=1725921555">
+                            <button class="font-italiana bg-orchid text-white text-stroke-white text-base md:text-lg lg:text-xl py-2 px-6 ml-4 md:ml-6 lg:ml-8 rounded-md">Venmo: @Sabrina-Taylor-91</button>
                         </a>
                     </div>
                 </div>
