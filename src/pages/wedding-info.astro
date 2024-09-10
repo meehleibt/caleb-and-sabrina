@@ -8,22 +8,25 @@ import GoldUp from '../svgs/Art-Deco-Element-UP.svg';
 const pageTitle = 'Wedding Info | Caleb + Sabrina';
 ---
 <BaseLayout title={pageTitle}>
-    <div class="relative">
-        <picture>
-            <source media="(max-width: 480px)" srcset="../images/Wedding-Info-Hero-Mobile.jpg" />
-            <source media="(max-width: 810px)" srcset="../images/Wedding-Info-Hero-Tablet.jpg" />
-            <source media="(min-width: 811px)" srcset="../images/Wedding-Info-Hero-Desktop.jpg" />
-            <img src="../images/Wedding-Info-Hero-Desktop.jpg" />
-        </picture>
-        <div class="absolute top-0 left-0 w-3/5">
-            <div class="grid grid-cols-2 min-h-[480px] md:min-h-[300px] lg:min-h-[700px] px-4 md:px-8 lg:px-32">
-                <div class="col-span-2 place-content-center -mt-28">
-                    <div class="font-dagtton text-white text-stroke-white text-shadow text-10xl">Wedding</div>
-                    <div class="font-dagtton text-white text-stroke-white text-shadow text-10xl pl-12 md:pl-20 lg:pl-40 -mt-28">Information</div>
+    <div class="mt-14 xl:mt-0">
+        <div class="relative">
+            <picture>
+                <source media="(max-width: 480px)" srcset="../images/Wedding-Info-Hero-Mobile.jpg" />
+                <source media="(max-width: 810px)" srcset="../images/Wedding-Info-Hero-Tablet.jpg" />
+                <source media="(min-width: 811px)" srcset="../images/Wedding-Info-Hero-Desktop.jpg" />
+                <img src="../images/Wedding-Info-Hero-Desktop.jpg" />
+            </picture>
+            <div class="absolute top-0 left-0 w-3/5">
+                <div class="grid grid-cols-2 min-h-[480px] md:min-h-[300px] xl:min-h-[700px] px-4 md:px-8 lg:px-32">
+                    <div class="col-span-2 md:place-content-center mt-20 lg:mt-0 md:-mt-28 xl:-mt-20 md:pl-16">
+                        <div class="font-dagtton text-white text-stroke-white text-shadow text-6xl md:text-7xl lg:text-8xl xl:text-10xl">Wedding</div>
+                        <div class="font-dagtton text-white text-stroke-white text-shadow text-6xl md:text-7xl lg:text-8xl xl:text-10xl pl-10 md:pl-14 lg:pl-20 xl:pl-40 -mt-30">Information</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 mt-12 lg:mt-14">
             <div class="col-span-12 md:col-span-5">
@@ -33,13 +36,13 @@ const pageTitle = 'Wedding Info | Caleb + Sabrina';
                     class="w-4/5 mx-auto mb-12 lg:mb-14"
                 />   
             </div>
-            <div class="col-span-12 md:col-span-7">
-                <h2 class="font-dagtton text-4xl md:text-5xl lg:text-7xl text-forest text-stroke mb-10">The Ballroom at Park Lane</h2>
-                <div class="border-b-2 border-gold w-full my-2 lg:my-4"></div>
-                <div class="mb-4 mt-8">
+            <div class="col-span-12 md:col-span-7 pr-1 lg:pr-16">
+                <h2 class="font-dagtton text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-forest text-stroke mb-6 md:mb-8 lg:mb-10">The Ballroom at Park Lane</h2>
+                <div class="border-b-2 border-gold w-5/6 md:w-full my-2 lg:my-4"></div>
+                <div class="mb-2 lg:mb-4 mt-4 lg:mt-8">
                   <a 
                     href="https://maps.app.goo.gl/KU5FKdWUGtWHwH6t6"
-                    class="font-montserrat text-orchid hover:text-wine text-stroke-wine font-medium text-lg md:text-xl lg:text-3xl underline">
+                    class="font-montserrat text-orchid hover:text-wine text-stroke-wine font-medium text-xl md:text-2xl lg:text-3xl underline">
                     10510 Park Ln, Cleveland, OH 44106
                   </a>  
                 </div>
@@ -48,28 +51,28 @@ const pageTitle = 'Wedding Info | Caleb + Sabrina';
             </div>
         </div>
     </div>
-    <div class="mt-16 mb-28">
+    <div class="mt-10 md:mt-16 mb-18 md:mb-22 xl:mb-28 pr-1 md:pr-12 lg:pr-16">
         <Image 
             src={GoldUp} 
             alt="Gold Art Deco Element Upward"
-            class="w-3/4 md:w-1/2 lg:w-1/3 mx-auto mb-4"
+            class="w-3/4 md:w-1/2 xl:w-1/3 mx-auto mb-4"
         />
-        <div class="w-4/5 lg:w-2/5 mx-auto">
-            <p class="font-montserrat text-forest text-center text-2xl font-bold pb-4">Caleb and Sabrina’s wedding will be held at the Ballroom at Park Lane on Saturday, May 10th, 2025 at 4:00pm.</p>
-            <p class="font-montserrat text-forest text-center text-2xl font-bold pb-4">After the ceremony, guest will enjoy a cocktail hour with hors d’oerves and drinks.</p>
-            <p class="font-montserrat text-forest text-center text-2xl font-bold pb-4">Following the cocktail hour, we will celebrate with a reception complete with a buffet dinner and dancing until 10:00pm.</p>
+        <div class="w-4/5 xl:w-2/5 mx-auto">
+            <p class="font-montserrat text-forest text-center text-xl md:text-2xl font-bold pb-4">Caleb and Sabrina’s wedding will be held at the Ballroom at Park Lane on Saturday, May 10th, 2025 at 4:00pm.</p>
+            <p class="font-montserrat text-forest text-center text-xl md:text-2xl font-bold pb-4">After the ceremony, guest will enjoy a cocktail hour with hors d’oerves and drinks.</p>
+            <p class="font-montserrat text-forest text-center text-xl md:text-2xl font-bold pb-4">Following the cocktail hour, we will celebrate with a reception complete with a buffet dinner and dancing until 10:00pm.</p>
         </div>
         <Image 
             src={GoldDown} 
             alt="Gold Art Deco Element Downward"
-            class="w-3/4 md:w-1/2 lg:w-1/3 mx-auto mt-4"
+            class="w-3/4 md:w-1/2 xl:w-1/3 mx-auto mt-4"
         />
     </div>
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 mt-14">
-            <div class="col-span-12 md:col-span-7">
-                <h2 class="font-dagtton text-5xl lg:text-7xl text-forest text-stroke mb-12">Where to Stay</h2>
-                <div class="border-b-2 border-gold w-4/5 my-4"></div>
+            <div class="col-span-12 lg:col-span-7 pl-1 md:pl-8 lg:pl-16">
+                <h2 class="font-dagtton text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-forest text-stroke mb-10 lg:mb-12">Where to Stay</h2>
+                <div class="border-b-2 border-gold w-2/3 md:w-2/5 lg:w-4/5 my-4"></div>
                 <p class="font-montserrat text-forest text-xl font-medium">Located directly west across the street from the Ballroom at Park Lane is a Residence Inn, where a room block will be reserved for our guests.</p>
                 <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1724848863823&key=GRP&guestreslink2=true">
                     <button class="font-italiana bg-orchid text-white text-stroke-white text-base md:text-lg lg:text-xl py-2 px-6 my-4 rounded-md">Book Room Block</button>
