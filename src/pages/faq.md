@@ -1,5 +1,5 @@
 ### How do I RSVP?
-Please visit [https://withjoy.com/sabrina-and-caleb-may-25/rsvp](WithJoy.com/sabrina-and-caleb-may-25/rsvp) to submit your RSVP. Or click the RSVP button located at the top of the website. The venue and caterer require a final guest count by March 1, 2025.
+Please visit [https://withjoy.com/sabrina-and-caleb-may-25/rsvp](WithJoy.com/sabrina-and-caleb-may-25/rsvp) to submit your RSVP. Or click the RSVP button located at the top of the website. The venue and caterer require a final guest count by April 26, 2025.
 
 ### Are children invited?
 We are delighted to have your children attend our big day! We ask parents with very small children or particularly excitable children to consider skipping the ceremony and join us afterward for the reception.
@@ -17,7 +17,7 @@ Located directly west across the street from the Ballroom at Park Lane is a Resi
 - [InterContinental Hotel Suites Cleveland](https://maps.app.goo.gl/B63KyDp3xYbY4CMG8) – 1.1 miles
 
 ### Where can we park?
-All guests, whether they are staying at the Residence Inn next door or otherwise, have permission from the hotel to use their parking lot. The parking lot is just across the street from the Ballroom at Park Lane.
+The Ballroom at Park Lane offers ample parking next door for guests. Those staying at the nearby Residence Inn also have use of their parking lot.
 
 ### When should we arrive?
 To allow yourself enough time to greet friends and family, find a seat, and get comfortable, we ask that guests arrive 30 minutes to an hour before the ceremony start time at 4pm. Per the venue, seating will not be permitted after 3:45pm.
@@ -26,7 +26,7 @@ To allow yourself enough time to greet friends and family, find a seat, and get 
 We truly ask all guests to leave their phones off and in pockets and purses during the ceremony. The ceremony will be short, and all photos will be made available for family and friends who are interested. We want to look back at our ceremony photos without phones and tablets in the background. Save your phone battery to take pics during the reception!
 
 ### Will there be an open bar?
-Yes! However, the Ballroom at Park Lane has a strict no-shots policy and outside alcohol is completely forbidden.
+Our beverage offerings will consist of a variety of beers, wines, and hard seltzers, and liquor will be available for guests to purchase from the bar. However, the Ballroom at Park Lane has a strict no-shots policy and outside alcohol is completely forbidden.
 
 ### Can dietary restrictions be accommodated for dinner/cocktail hour?
 Yes, our caterer can accommodate allergies and dietary restrictions. Please add any restrictions to your note when you RSVP at: [https://withjoy.com/sabrina-and-caleb-may-25/rsvp](WithJoy.com/sabrina-and-caleb-may-25/rsvp).
